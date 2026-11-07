@@ -1,19 +1,19 @@
-# Lab 03 - Cau tra loi va bang chung
+# Lab 03 - Bugfix, conflict và hoàn tác
 
-## Merge base
-La to tien chung tot nhat cua hai commit. Merge ba chieu so sanh hai nhanh voi to tien chung de ket hop thay doi. Hai nhanh cung sua dong print trong aims/cart.py gay conflict noi dung.
+## Merge base là gì?
+Là tổ tiên chung tốt nhất của hai commit. Merge ba chiều đối chiếu hai phía với tổ tiên chung để kết hợp thay đổi. Hai nhánh sửa cùng dòng print trong cart.py đã tạo conflict thật.
 
-## Vi sao master/release dung revert?
-Revert tao commit dao nguoc, khong doi SHA va lich su da chia se. Reset/rebase doi lich su, co the lam mat lien ket commit va anh huong nguoi khac. Revert merge can -m 1 de chon parent master lam mainline.
+## Vì sao master/release dùng revert?
+Revert thêm commit đảo ngược, giữ SHA và lịch sử đã chia sẻ. Reset/rebase thay lịch sử và có thể ảnh hưởng người đang dựa trên commit cũ. Revert merge cần -m 1 để chọn parent master làm mainline.
 
-## Truy vet loi
-Issue #6 -> test 9609b3b (FAIL: True is not false) -> fix f375b4e (PASS) -> PR #7 (Fixes #6). PR #8 co base feature/discount, duoc thuc hien o clone aims-dev2; PR #9 tich hop feature da sua.
+## Bằng chứng bugfix
+Issue #6 -> test 9609b3b FAIL (True is not false) -> fix f375b4e PASS -> PR #7 với Fixes #6 -> Issue đóng. Bugfix giảm giá trong clone aims-dev2 có test FAIL trước fix; PR #8 có base feature/discount, rồi PR #9 mới tích hợp feature vào master. 100 giảm 20% còn 80; 150% gây ValueError.
 
-## Xung dot
-PR #10 vao truoc; PR #11 sua cung dong va gay conflict that. Da ket hop thong bao tieng Viet va ten DVD, chay 4 tests OK, commit da20e86, merge PR #11. Nhanh rieng topic/rebase-practice tai hien conflict bang rebase va da rebase --continue; khong force push lich su chung.
+## Conflict và rebase
+PR #10 đổi thông báo tiếng Việt vào trước. PR #11 sửa cùng dòng và conflict; commit da20e86 kết hợp tiếng Việt + tên DVD sau khi chạy 4 tests. Nhánh riêng topic/rebase-practice tái hiện cùng conflict và hoàn thành rebase --continue. PR #12 dùng revert -m 1 để hoàn tác merge PR #11, giữ thông báo của PR #10.
 
-## Hoan tac va khoi phuc
-Tren topic/undo-practice (khong push), da thu reset --soft, --mixed va --hard. Hard reset chi bo empty commit, khong xoa noi dung file. Da dung reflog tim empty commit va giu lai bang topic/reflog-recovered. PR nay revert merge PR #11, giu thong bao tieng Viet cua PR #10.
+## Reset và reflog
+topic/undo-practice không push: soft đưa thay đổi về staging, mixed về working directory. Hard reset chỉ bỏ empty commit, không xóa nội dung file người dùng. reflog tìm lại commit và topic/reflog-recovered giữ tham chiếu khôi phục. Các nhánh thực hành được giữ lại.
 
-## Kiem thu
-4 tests: gioi han 20 DVD, tong tien 63.89, giam 20% cua 100 con 80, tu choi 150%. Tat ca pass sau fix va sau xu ly conflict.
+## Bảo trì sau nộp
+Phát hiện lỗi mã hóa dấu tiếng Việt do pipeline PowerShell; PR #24 sửa release/lab03 qua hotfix. Tag v0.3.0 gốc không bị di chuyển.

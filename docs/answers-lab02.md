@@ -1,16 +1,16 @@
-# Lab 02 - Cau tra loi
+# Lab 02 - Feature/topic, PR và review
 
-## Dong bo master truoc PR
-Lay thay doi moi va kiem tra tich hop som, giam xung dot va tranh kiem thu chi tren nen cu. Nhanh search duoc tao truoc khi cart-print merge, sau do merge origin/master va chay demo.
+## Vì sao đồng bộ master trước PR?
+Nhận thay đổi mới, phát hiện xung đột và chạy test tích hợp sớm. feature/search-by-title tạo từ master trước cart-print, sau đó fetch và merge origin/master, chạy demo rồi gửi PR #4.
 
-## Khi nao khong rebase?
-Khong rebase master/release hoac commit da chia se voi nguoi dang dua tren no. Rebase doi SHA; neu thuc hanh tren nhanh rieng, can phoi hop va chi push --force-with-lease khi phu hop.
+## Khi nào không được rebase?
+Không rebase master/release hoặc commit đã chia sẻ mà người khác đang dùng. Rebase đổi SHA. Bài thực hành rebase conflict dùng nhánh mới chưa push, không viết lại lịch sử chung.
 
-## feature va topic
-feature dung cho hanh vi san pham; topic cho cong viec nhu tai lieu, cau hinh, chuan bi phat hanh. Ca hai tach tu master va vao master qua PR.
+## feature khác topic thế nào?
+feature phục vụ chức năng sản phẩm; topic phục vụ công việc như tài liệu, cấu hình, chuẩn bị phát hành. Cả hai tạo từ master và tích hợp qua PR.
 
-## Ba kieu merge
-Merge commit giu nhanh va commit chi tiet; squash gop thay doi thanh mot commit; rebase dua commit len nen moi va tao SHA moi, lich su tuyen tinh.
+## So sánh ba kiểu merge
+Merge commit giữ các commit và cấu trúc nhánh; squash gom thay đổi thành một commit; rebase tạo SHA mới trên nền mới và lịch sử tuyến tính. PR #3 dùng merge, #4 squash, #5 rebase. Revert một merge dùng -m để chọn mainline; squash thường revert một commit; rebase nhiều commit có thể cần revert nhiều lần.
 
-## Gioi han review
-Lam mot minh: approvals=0. Cart-print co commit bo sung xu ly gio trong sau khi mo PR, nhung chua co partner Request changes/Approve. Khong xem day la bang chung review doc lap.
+## Review
+PR #3 được mở trước commit xử lý giỏ rỗng 2b9a540, sau đó cập nhật cùng nhánh. Chưa có partner nên không có Request changes/Approve độc lập. Dùng chế độ cá nhân 0 approval mà tài liệu cho phép. Không đánh dấu vòng review partner là hoàn thành.
