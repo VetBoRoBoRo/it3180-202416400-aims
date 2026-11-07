@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-07",
+  "repository": "https://github.com/VietTran06/it3180-202416400-aims",
+  "default_branch": "master",
+  "required_checks": [
+    "test"
+  ],
+  "enforce_admins": true,
+  "rulesets": [
+    {
+      "id": 26752975,
+      "name": "Protect lab release baselines",
+      "enforcement": "active"
+    }
+  ],
+  "tags": {
+    "v0.1.0": "a1ef28f350396ae6da66d647c1baa46e6e8d8d54",
+    "v0.2.0": "075b7cf6eee8bb3bc52aa16579bcb3ecf163e650",
+    "v0.3.0": "5bf779785b95686512cd73feba782864681775b5",
+    "v1.0.0": "56297055095d8f9dfddec1b4bc32435505b9c6b2",
+    "v1.0.1": "9c5fe74aacf3cce589eefe61bd07bf32af8856ec",
+    "v1.1.0": "8a2d50cbec3cca1ee007770522ec4891a7feaf23",
+    "v1.0.2": "e5f3c91bb30a5b08d08c6eefbb323bf2ace4fa57",
+    "v1.1.1": "dc21a18e5f354eddc3af8da116ffedebf9344add"
+  },
+  "issues": [
+    {
+      "number": 6,
+      "state": "closed",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/issues/6"
+    },
+    {
+      "number": 17,
+      "state": "closed",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/issues/17"
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 26,
+      "title": "fix: preserve Vietnamese message encoding on release/lab05",
+      "base": "release/lab05",
+      "head": "hotfix/vietnamese-encoding-lab05",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:59:50Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/26"
+    },
+    {
+      "number": 25,
+      "title": "fix: preserve Vietnamese message encoding on release/lab04",
+      "base": "release/lab04",
+      "head": "hotfix/vietnamese-encoding-lab04",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:59:31Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/25"
+    },
+    {
+      "number": 24,
+      "title": "fix: preserve Vietnamese message encoding on release/lab03",
+      "base": "release/lab03",
+      "head": "hotfix/vietnamese-encoding-lab03",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:59:09Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/24"
+    },
+    {
+      "number": 23,
+      "title": "fix: preserve Vietnamese message encoding on master",
+      "base": "master",
+      "head": "hotfix/vietnamese-encoding",
+      "state": "closed",
+      "merged_at": "2026-11-07T11:00:04Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/23"
+    },
+    {
+      "number": 22,
+      "title": "test: demonstrate CI blocking broken total cost",
+      "base": "master",
+      "head": "bugfix/ci-demo",
+      "state": "closed",
+      "merged_at": null,
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/22"
+    },
+    {
+      "number": 21,
+      "title": "ci: run unit tests for master and release PRs",
+      "base": "master",
+      "head": "topic/ci-unit-tests",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:29:41Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/21"
+    },
+    {
+      "number": 20,
+      "title": "fix: propagate title-search hotfix to Lab 05",
+      "base": "release/lab05",
+      "head": "hotfix/search-case-insensitive-lab05",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:21:46Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/20"
+    },
+    {
+      "number": 19,
+      "title": "fix: propagate title-search hotfix to master",
+      "base": "master",
+      "head": "hotfix/search-case-insensitive-master",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:21:36Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/19"
+    },
+    {
+      "number": 18,
+      "title": "fix: patch title search in 1.0.1",
+      "base": "release/lab04",
+      "head": "hotfix/search-case-insensitive",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:20:29Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/18"
+    },
+    {
+      "number": 16,
+      "title": "chore: prepare 1.1.0 baseline before hotfix",
+      "base": "master",
+      "head": "topic/prepare-release-1.1.0",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:14:48Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/16"
+    },
+    {
+      "number": 15,
+      "title": "feat: add category search for 1.1.0",
+      "base": "master",
+      "head": "feature/search-by-category",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:14:00Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/15"
+    },
+    {
+      "number": 14,
+      "title": "feat: add cart sorting after 1.0.0 release",
+      "base": "master",
+      "head": "feature/sort-cart",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:08:05Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/14"
+    },
+    {
+      "number": 13,
+      "title": "chore: prepare AIMS-mini 1.0.0",
+      "base": "master",
+      "head": "topic/prepare-release-1.0.0",
+      "state": "closed",
+      "merged_at": "2026-11-07T10:06:04Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/13"
+    },
+    {
+      "number": 12,
+      "title": "fix: revert added-title merge and document Lab 03",
+      "base": "master",
+      "head": "bugfix/revert-show-added-title",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:56:13Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/12"
+    },
+    {
+      "number": 11,
+      "title": "feat: show added DVD title and resolve conflict",
+      "base": "master",
+      "head": "feature/show-added-title",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:54:45Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/11"
+    },
+    {
+      "number": 10,
+      "title": "feat: use Vietnamese cart messages",
+      "base": "master",
+      "head": "feature/vietnamese-messages",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:50:08Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/10"
+    },
+    {
+      "number": 9,
+      "title": "feat: add validated cart discounts",
+      "base": "master",
+      "head": "feature/discount",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:49:29Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/9"
+    },
+    {
+      "number": 8,
+      "title": "fix: correct discount calculation on feature branch",
+      "base": "feature/discount",
+      "head": "bugfix/discount-calculation",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:49:16Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/8"
+    },
+    {
+      "number": 7,
+      "title": "fix: reject the 21st DVD in cart",
+      "base": "master",
+      "head": "bugfix/cart-limit-off-by-one",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:48:20Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/7"
+    },
+    {
+      "number": 5,
+      "title": "docs: add use case and Lab 02 answers",
+      "base": "master",
+      "head": "topic/use-case-diagram",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:45:43Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/5"
+    },
+    {
+      "number": 4,
+      "title": "feat: add title search",
+      "base": "master",
+      "head": "feature/search-by-title",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:45:24Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/4"
+    },
+    {
+      "number": 3,
+      "title": "feat: print cart contents in demo",
+      "base": "master",
+      "head": "feature/cart-print",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:44:22Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/3"
+    },
+    {
+      "number": 2,
+      "title": "docs: add pull request template",
+      "base": "master",
+      "head": "topic/pr-template",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:35:44Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/2"
+    },
+    {
+      "number": 1,
+      "title": "refactor: apply Release Flow and complete Lab 01",
+      "base": "master",
+      "head": "refactor/apply-release-flow",
+      "state": "closed",
+      "merged_at": "2026-11-07T09:30:48Z",
+      "html_url": "https://github.com/VietTran06/it3180-202416400-aims/pull/1"
+    }
+  ],
+  "tests": {
+    "release/lab03": 4,
+    "v1.0.1": 5,
+    "v1.0.2": 5,
+    "v1.1.0": 8,
+    "v1.1.1": 8,
+    "master": 8
+  },
+  "ci_good_run": 42363815499,
+  "ci_failed_demo_run": 42364437222,
+  "ci_demo_mergeable_state_before_close": "blocked",
+  "notes": [
+    "Snapshot precedes the final documentation PR.",
+    "Partner review not performed; single-user mode with zero approvals.",
+    "Old tags preserved; release branches include later maintenance fixes."
+  ]
+}

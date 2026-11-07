@@ -1,16 +1,16 @@
-# Lab 01 - Cau tra loi
+# Lab 01 - Thiết lập và refactor
 
-## global va local
-`--global` luu cau hinh nguoi dung trong ~/.gitconfig (hoac XDG config); `--local` luu trong .git/config cua repository. Cau hinh local uu tien hon global.
+## --global lưu ở đâu, khác --local thế nào?
+Cấu hình người dùng thường nằm ở ~/.gitconfig (hoặc cấu hình XDG). --local nằm trong .git/config của repo và ưu tiên hơn global. Dùng git config --list --show-origin để xem nguồn cấu hình. Bài làm giữ tên/email tác giả đã có, chỉ cấu hình repo khi cần.
 
-## Vi sao git mv?
-Lenh the hien ro y dinh di chuyen, dong thoi stage duong dan cu va moi. Git nhan dien rename theo do tuong dong noi dung, khong luu mot metadata rename rieng. `git log --follow -- aims/cart.py` theo doi lich su qua rename.
+## Vì sao dùng git mv?
+Lệnh chuyển file và stage đường dẫn cũ/mới, thể hiện rõ ý định refactor. Git phát hiện rename bằng độ tương đồng nội dung; không lưu một thuộc tính rename cố định. git log --follow -- aims/cart.py theo lịch sử qua đổi tên. Commit 4faac25 ghi nhận rename 100%.
 
-## release/lab01 co phai baseline?
-Co: day la moc bai nop da thong nhat. Nhanh co the di chuyen khi sua qua hotfix; tag se dinh danh bat bien mot commit khi duoc tao o Lab 04.
+## release/lab01 có phải baseline?
+Có: đây là trạng thái bài nộp đã thống nhất. Khi vừa tạo, master và release/lab01 cùng commit a1ef28f. Sau đó master phát triển tiếp. Annotated tag v0.1.0 được thêm ở Lab 04 để định danh bất biến baseline này.
 
-## Vi sao van dung PR khi lam mot minh?
-PR ghi lai muc dich, diff va cach kiem thu, tao diem kiem soat truoc khi tich hop. Che do mot minh dat approvals = 0; khong gia lap partner approval.
+## Vì sao làm một mình vẫn dùng PR?
+PR lưu mục đích, diff, cách kiểm thử và điểm kiểm soát trước tích hợp. Tài liệu cho phép 0 approval khi làm một mình. Điều này không thay thế bằng chứng review của partner.
 
-## Bang chung thuc hanh
-Da thu restore, restore --staged va amend tren commit chua push. main.py truoc va sau refactor deu in Total cost: 63.89 $. Khong commit cache Python.
+## Thực hành
+Đã dùng restore để bỏ thay đổi working tree, restore --staged để bỏ staging, amend sửa message trước push. Demo trước/sau refactor đều 63.89 $. SSH được xác thực bằng deploy key chỉ cho repo; chi tiết và khác biệt với key cấp tài khoản nằm trong báo cáo.
