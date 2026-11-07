@@ -4,6 +4,10 @@ All notable changes are documented here. Versions follow Semantic Versioning.
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-11-07
+### Fixed
+- Preserve Vietnamese cart messages as UTF-8.
+
 ## [1.1.0] - 2026-11-07
 ### Added
 - Category search (case-insensitive exact category).
