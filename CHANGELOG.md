@@ -3,6 +3,8 @@
 All notable changes are documented here. Versions follow Semantic Versioning.
 
 ## [Unreleased]
+### Added
+- Cart sorting by title and cost.
 
 ## [1.0.0] - 2026-11-07
 ### Added
