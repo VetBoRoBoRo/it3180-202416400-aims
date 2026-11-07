@@ -3,6 +3,8 @@
 All notable changes are documented here. Versions follow Semantic Versioning.
 
 ## [Unreleased]
+
+## [1.1.0] - 2026-11-07
 ### Added
 - Category search (case-insensitive exact category).
 - Cart sorting by title and cost.
