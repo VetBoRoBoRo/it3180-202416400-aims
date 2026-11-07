@@ -9,6 +9,10 @@ All notable changes are documented here. Versions follow Semantic Versioning.
 - Category search (case-insensitive exact category).
 - Cart sorting by title and cost.
 
+## [1.0.1] - 2026-11-07
+### Fixed
+- Title search now ignores letter case (#17).
+
 ## [1.0.0] - 2026-11-07
 ### Added
 - DVD model, cart add/remove/total, print_cart and title search.
